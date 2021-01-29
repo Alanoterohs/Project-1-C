@@ -14,4 +14,5 @@ int main()
     }
     //Último valor: 0
     //Ingresa una vez al while porque luego al asignarle i=0, no le permite la condición para volver a iterar de nuevo.
+    return 0;
 }

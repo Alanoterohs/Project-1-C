@@ -3,30 +3,28 @@
 
 int main()
 {
-    //usuario debe ingresar x-> 5, i-> 0 res-> false o 0
-    int x,i,res;
+    //usuario debe ingresar x-> 13, y-> 3 i-> 0
+    int x,y,i;
     printf("ingrese un valor para x: ");
     scanf("%d", &x);
+    printf("ingrese un valor para y: ");
+    scanf("%d", &y);
     printf("ingrese un valor para i: ");
     scanf("%d", &i);
-    printf("ingrese un valor para res: ");
-    scanf("%d", &res);
 
-    i=2;
-    res=true;
+    i=0;
 
-    while (i < x && res)
+    while (x >= y)
     {
-    res = res && (x % i !=0);
-    i = i+1;
-    printf("valor de x-> %d, i->%d res->%d  luego de cada iteración\n", x,i,res);
+    x = x - y;
+    i = i + 1;
+    printf("valor de x-> %d, y->%d i->%d  luego de cada iteración\n", x,y,i);
 
-    /*
-    valor de x-> 5, i->3 res->1  luego de cada iteración
-    valor de x-> 5, i->4 res->1  luego de cada iteración
-    valor de x-> 5, i->5 res->1  luego de cada iteración
-    */
-
+  /*valor de x-> 10, y->3 i->1  luego de cada iteración
+    valor de x-> 7, y->3 i->2  luego de cada iteración
+    valor de x-> 4, y->3 i->3  luego de cada iteración
+    valor de x-> 1, y->3 i->4  luego de cada iteración*/
     }
     
+    return 0;
 }
